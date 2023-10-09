@@ -31,4 +31,4 @@ The rqt_gui will be turned on automatically, the twist topic of Robot Steering n
 3. The robot will run automatically if the namespace is the same as started robot node. For example, robot1 will run automatically if `roslaunch robot_no_crash robot_supervisor.launch robot_ns:=robot1` is used
 ### Use rqt_gui to control robot
 1. Start the rqt_gui with `rosrun rqt_gui rqt_gui`
-2. The twist topic of Robot Steering needs to be set to `/<namespace>/des_del`
+2. The twist topic of Robot Steering needs to be set to `/<namespace>/des_del` to control the corresponding robot
