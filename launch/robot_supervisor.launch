@@ -1,0 +1,9 @@
+<launch>
+	<arg name="wall_dist_set" default="false" />
+	<arg name="if_remap" default="false" />
+	<arg name="robot_ns" default="robot0" />
+	<node name="node_$(arg robot_ns)" type="robot_no_crash_node" pkg="robot_no_crash" ns="$(arg robot_ns)" output="screen">
+		<remap from="laser_1" to="laser_0" if="$(arg if_remap)"/>
+	</node>
+	<param name="wall_dist" value="0.5" type="double" if="$(arg wall_dist_set)" />
+</launch>

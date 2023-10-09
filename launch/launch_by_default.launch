@@ -1,0 +1,9 @@
+<launch>
+	<arg name="wall_dist_set" default="false" />
+	<include file="$(find stdr_launchers)/launch/server_with_map_and_gui_plus_robot.launch" />
+	<include file="$(find robot_no_crash)/launch/robot_supervisor.launch">
+		<arg name="if_remap" value="true" />
+		<arg name="wall_dist_set" value="$(arg wall_dist_set)" />
+	</include>
+	<node pkg="rqt_gui" type="rqt_gui" name="robot0" />
+ </launch>
