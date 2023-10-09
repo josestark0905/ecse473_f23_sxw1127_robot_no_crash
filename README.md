@@ -24,7 +24,7 @@ The stdr_launchers of a map with a default robot0 will be turned on automaticall
 ### Launch with specify namespace, such as robot1
 `roslaunch robot_no_crash robot_supervisor.launch robot_ns:=robot1`
 ### Use rqt_gui to control robot
-1. Start the rqt_gui with 'rosrun rqt_gui rqt_gui'
+1. Start the rqt_gui with `rosrun rqt_gui rqt_gui`
 2. The twist topic of Robot Steering needs to be set to `/<namespace>/des_del`
 ### Use stdr_launchers to view robot
 1. `roslaunch stdr_launchers server_with_map_and_gui.launch`
