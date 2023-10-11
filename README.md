@@ -28,7 +28,7 @@
 ### 4. Use stdr_launchers to view robot
 1. `roslaunch stdr_launchers server_with_map_and_gui.launch`
 2. Only the map will be turned on, robots need to be added from gui
-3. The robot will run automatically if the namespace is the same as started robot node. For example, robot1 will run automatically if `roslaunch robot_no_crash robot_supervisor.launch robot_ns:=robot1` is used
+3. The robot will run automatically if the namespace is the same as the created robot in map gui. For example, robot1 in gui will run automatically if `roslaunch robot_no_crash robot_supervisor.launch robot_ns:=robot1` is used
 ### 5. Use rqt_gui to control robot
 1. Start the rqt_gui with `rosrun rqt_gui rqt_gui`
 2. The twist topic of Robot Steering needs to be set to `/<namespace>/des_del` to control the corresponding robot
