@@ -6,16 +6,16 @@
 4. Source with `source devel/setup.bash`
 
 ## Launch by default
-### - Argument
-1. `wall_dist_set`: `false` by default, which means the parameter `wall_dist` uses the default value 1, set it to `true` can reload the parameter `wall_dist` to 0.5
-### Launch with default parameter `wall_dist = 1`
-`roslaunch robot_no_crash launch_by_default.launch`
-### Launch with reload parameter `wall_dist = 0.5`
-`roslaunch robot_no_crash launch_by_default.launch wall_dist_set:=true`
-### Use stdr_launchers to view robot
-The stdr_launchers of a map with a default robot0 will be turned on automatically
-### Use rqt_gui to control robot
-The rqt_gui will be turned on automatically, the twist topic of Robot Steering needs to be set to `/robot0/des_del`
+### 1. Argument
+- `wall_dist_set`: `false` by default, which means the parameter `wall_dist` uses the default value 1, set it to `true` can reload the parameter `wall_dist` to 0.5
+### 2. Launch with default parameter `wall_dist = 1`
+- `roslaunch robot_no_crash launch_by_default.launch`
+### 3. Launch with reload parameter `wall_dist = 0.5`
+- `roslaunch robot_no_crash launch_by_default.launch wall_dist_set:=true`
+### 4. Use stdr_launchers to view robot
+- The stdr_launchers of a map with a default robot0 will be turned on automatically
+### 5. Use rqt_gui to control robot
+- The rqt_gui will be turned on automatically, the twist topic of Robot Steering needs to be set to `/robot0/des_del`
 
 ## Launch multiple robots with specify namespace
 ### Argument
