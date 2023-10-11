@@ -6,7 +6,7 @@
 4. Source with `source devel/setup.bash`
 
 ## Launch by default
-### Argument
+### - Argument
 1. `wall_dist_set`: `false` by default, which means the parameter `wall_dist` uses the default value 1, set it to `true` can reload the parameter `wall_dist` to 0.5
 ### Launch with default parameter `wall_dist = 1`
 `roslaunch robot_no_crash launch_by_default.launch`
